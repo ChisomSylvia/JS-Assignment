@@ -46,4 +46,4 @@ function checkP(str) {
         console.log(false);
     }
 }
-checkP("rar");
+checkP("rar"); //use .length and char at to manipulate this.

@@ -44,30 +44,69 @@ for (let key in person) {
 // Implement a program to store student information (name, ID, grades) as objects in an array. Allow users to search for a student by name and display their information.
 // Explore object methods for iterating through properties (e.g., for...in loop) and nested objects for more complex data structures.
 // Create an object representing a library book with properties like title, author, and isCheckedOut. Implement a function that displays all the book's information using a loop to iterate through the object's properties.
+ 
+
+// Define the Product object
+function Product(name, price, inStock) {
+    this.name = name;
+    this.price = price;
+    this.inStock = inStock;
+  }
+  
+  // Define the Cart object
+  function Cart() {
+    this.items = [];
+  }
+  
+  // Function to add a product to the cart
+  Cart.prototype.addItem = function(product) {
+      this.items.push({product: product});
+      console.log(product.name + " " + product.price + " " + product.inStock); 
+  };
+  
+  // Function to remove a product from the cart
+  Cart.prototype.removeItem = function(product) {
+    this.items.find(item => item.product === product);
+    console.log(product.name + " " + product.price + " " + product.inStock);
+  };
+  
+  // Example usage:
+  let laptop = new Product("Laptop", 999, true);
+  let phone = new Product("Phone", 699, false);
+  
+  const cart = new Cart();
+  cart.addItem(laptop);
+  cart.addItem(phone);
+  
+  cart.removeItem(laptop);
+  
 
 
 
-// const user = {
-//     name: ["Chisom", "Sylvia", "Obi"],
-//     id: [22, 23, 24],
-//     grades: ["A", "B", "A"],
+// function user(name, id, grade) {
+//     this.name = name;
+//     this.id = id;
+//     this.grade = grade;
+
+//     // this.getInfo = function() {
+//     //     return this.name + " " + this.id + " " + this.grade;
+//     // };
 // }
 
-// console.log(user.name[1]);
-// console.log(user.grades[1]);
+// const user1 = new user("Chisom", 28, "A");
+// const user2 = new user("Joyce", 20, "B");
+// const user3 = new user("Praise", 20, "A");
 
-function user(name, id, grade) {
-    this.name = name;
-    this.id = id;
-    this.grade = grade;
+// const userArray = ["user1", "user2", "user3"];
 
-    this.userInfo = function() {
-        return this.name + " " + this.id + " " + this.grade;
-    };
-}
-
-let checkUser = new user("Chisom", 22, "A");
-console.log(checkUser.userInfo());
+// function displayUserInfo(name) {
+//     for (let i = 0; i <userArray.length; i++) {
+//         if (userArray[i].name === name) {
+//             console.log(`${userArray[i].name} ${userArray[i].id} ${userArray[i].grade}`);
+//         }
+//     }
+// }
+// displayInfo(Chisom);
 
 
 const Book = {
@@ -81,5 +120,6 @@ function displayInfo(book) {
         //console.log(`${x}: ${book[x]}`);
         console.log(x + ":" + " " + book[x]);
       }
+    
 }
 displayInfo(Book);

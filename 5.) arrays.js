@@ -37,28 +37,44 @@ console.log(evenNumbers) */
 
 const movies = ["Chuck", "wish", "Titanic", "Inception", "Frozen"];
 
-for (let m = 0; m < movies.length; m++) {
-    console.log(movies[m]);
-}
+//use for method
+// for (let m = 0; m < movies.length; m++) {
+//     console.log(movies[m]);
+// } 
+
+// //use ForEach method (arrow function)
+movies.forEach((movie, index) => console.log(index, movie));
+
+//use ForEach method (without arrow function)
+// movies.forEach (
+//     function iterate(movie, index) {
+//         console.log(`${index}: ${movie}`);
+//     }
+// );
 
 
 const numArray = [2, 4, 5, 8, 10];
-function sumArray() {
-    let sum = 0;
-    for (let i = 0; i < numArray.length; i++) {
-        sum += numArray[i];
-    }
-    console.log(sum);
-}
-sumArray();
+// use for loop
+// function sumArray() {
+//     let sum = 0;
+//     for (let i = 0; i < numArray.length; i++) {
+//         sum += numArray[i];
+//     }
+//     console.log(sum);
+// }
+// sumArray(); 
+
+//use map function
+const sum = numArray.reduce((acc, num) => acc + num, 0);
+//const sumArray = numArray.map(num => num + sum); ?? why can't i use map here
+console.log(sum);
 
 
-let cart = ["Rice", "Apple", "Berries"];
-cart.push("Hamburger")
-for (let c = 0; c < cart.length; c++) {
-    console.log(cart[c]);
-}
-
+// let cart = ["Rice", "Apple", "Berries"];
+// cart.push("Hamburger")
+// for (let c = 0; c < cart.length; c++) {
+//     console.log(cart[c]);
+// }
 
 const shoppingCart = [];
 
