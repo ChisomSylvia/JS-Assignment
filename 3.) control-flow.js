@@ -52,6 +52,7 @@ console.log("Congratulations! You guessed the number."); */
 // Create a while loop that iterates as long as a user enters a specific keyword (e.g., "quit").
 
 
+// Write an if/else statement to check if a user is eligible to vote based on their age (consider voting age in your country).
 let age = 30;
 if (age >= 18) {
     console.log("You are eligible to vote");
@@ -60,6 +61,7 @@ if (age >= 18) {
 }
    
 
+// Use a for loop to print all the even numbers from 1 to 10.
 for (let evenNum = 1; evenNum <= 10; evenNum++) {
     if (evenNum % 2 === 0) {
     console.log(evenNum, "is an even number");
@@ -67,7 +69,8 @@ for (let evenNum = 1; evenNum <= 10; evenNum++) {
     //evenNum += 1;
     }
 
-    
+  
+// Create a while loop that iterates as long as a user enters a specific keyword (e.g., "quit").
 let input = prompt("Enter a word");
 while ( input === "quit") {
     input = prompt("Enter another 'quit' or another word to exit" );

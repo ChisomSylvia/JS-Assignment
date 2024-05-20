@@ -46,6 +46,8 @@ for (let key in person) {
 // Create an object representing a library book with properties like title, author, and isCheckedOut. Implement a function that displays all the book's information using a loop to iterate through the object's properties.
  
 
+
+// Create an object to represent a product with properties like name, price, and inStock. Write functions to add and remove items from a shopping cart that uses this object structure.
 // Define the Product object
 function Product(name, price, inStock) {
     this.name = name;
@@ -82,6 +84,7 @@ function Product(name, price, inStock) {
   
 
 
+// Implement a program to store student information (name, ID, grades) as objects in an array. Allow users to search for a student by name and display their information.
 
 // function user(name, id, grade) {
 //     this.name = name;
@@ -109,6 +112,8 @@ function Product(name, price, inStock) {
 // displayInfo(Chisom);
 
 
+
+// Create an object representing a library book with properties like title, author, and isCheckedOut. Implement a function that displays all the book's information using a loop to iterate through the object's properties.
 const Book = {
     title: "Jane Eyre",
     author: "Charlotte Bronte",

@@ -35,13 +35,14 @@ function incrementI() {
 // Write a function to calculate the factorial of a number (the product of all positive integers less than or equal to that number).
 // Implement a function that checks if a string is a palindrome (reads the same backward as forward).
 
-
+// Create a function that takes two numbers as arguments and returns their sum.
 function sum(x, y) {
     return(x + y);
 }
 console.log(sum(5, 4));
 
 
+// Write a function to calculate the factorial of a number (the product of all positive integers less than or equal to that number).
 function factorial(num) {
     let result = 1;
     for (let i = 2; i <= num; i++) {
@@ -52,6 +53,7 @@ function factorial(num) {
 factorial(10);
 
 
+// Implement a function that checks if a string is a palindrome (reads the same backward as forward).
 let p = "loop";
 function palindrome() {
     let pRev = p.split("").reverse().join("");

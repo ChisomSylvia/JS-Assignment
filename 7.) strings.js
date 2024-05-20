@@ -30,6 +30,8 @@ console.log(`Hi, I am ${firstName} ${lastName}`) */
 // Implement a function that takes a string as input and checks if it is a palindrome. Use string methods to manipulate the string for comparison.
 
 
+
+// Write a program that prompts the user for a sentence. Use string methods to convert the sentence to lowercase, remove leading and trailing whitespace, and then count the number of words in the sentence.
 let userInput = prompt("Please enter your full name");
 
 console.log(userInput.toLowerCase());
@@ -37,6 +39,8 @@ console.log(userInput.trim());
 console.log(userInput.split(" ").length);
 
 
+
+// Implement a function that takes a string as input and checks if it is a palindrome. Use string methods to manipulate the string for comparison.
 function checkP(str) {
     let reverseP = str.split("").reverse().join("");
     

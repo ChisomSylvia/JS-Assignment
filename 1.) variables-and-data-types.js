@@ -24,11 +24,13 @@ const fruits = ["apple", "banana", "orange"]; // Array */
 // Create an array of your favorite movies with at least 5 elements.
 
 
+// Create variables to store your name, age, and favorite color. Use let and const appropriately.
 const fullName = "Chisom Sylvia Obi";
 let myAge = 27;
 let favColor = "red";
 
 
+// Declare variables with different primitive data types and perform basic operations like addition, comparison, and type checking.
 let num1 = 25;
 let num2 = num1 ++;
 const total = num1 + num2; 
@@ -55,6 +57,7 @@ let nullEg = null;
 console.log(nullEg); // A null variable
 
 
+// Initialize an object to represent a product with properties like name, price, and inStock.
 const product = {
     name: "LexusRx350",
     price: 15000000,
@@ -63,5 +66,6 @@ const product = {
 console.log(product.price);
 
 
+// Create an array of your favorite movies with at least 5 elements.
 const myMovies = ["Chuck", "wish", "Titanic", "Inception", "Frozen"];
 console.log(myMovies);

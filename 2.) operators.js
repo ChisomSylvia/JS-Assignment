@@ -33,6 +33,7 @@ x += 3; // Equivalent to x = x + 3 (x becomes 8) */
 // Experiment with increment and decrement operators to modify variable values.
 
 
+// Write expressions using arithmetic operators to calculate the area of a rectangle and the volume of a cube.
 let length = 10;
 let width =  5;
 const area = length * width;
@@ -43,10 +44,12 @@ let volume = a ** 3;
 console.log(volume); //volume of cube
 
 
+// Compare two numbers using different comparison operators and print the results.
 console.log(length >= width);
 console.log(length === width);
 
 
+// Combine logical operators to create conditional statements that check if a number is even or odd.
 let x = 3;
 if (x % 2 === 0) {
     console.log("This is an even number");
@@ -55,6 +58,7 @@ if (x % 2 === 0) {
 }
 
 
+// Experiment with increment and decrement operators to modify variable values.
 let num = 32;
 num = ++num;
 console.log(num);

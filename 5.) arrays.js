@@ -35,6 +35,8 @@ console.log(evenNumbers) */
 // Explore array methods like slice, splice, and sort to manipulate and organize array elements in different ways.
 
 
+
+// Write a program that creates an array of your favorite movies and then iterates through the array to print each movie title.
 const movies = ["Chuck", "wish", "Titanic", "Inception", "Frozen"];
 
 //use for method
@@ -53,6 +55,7 @@ movies.forEach((movie, index) => console.log(index, movie));
 // );
 
 
+// Implement a function that takes an array of numbers and returns the sum of all the elements.
 const numArray = [2, 4, 5, 8, 10];
 // use for loop
 // function sumArray() {
@@ -64,11 +67,14 @@ const numArray = [2, 4, 5, 8, 10];
 // }
 // sumArray(); 
 
-//use map function
+//use reduce function
 const sum = numArray.reduce((acc, num) => acc + num, 0);
+//use map function
 //const sumArray = numArray.map(num => num + sum); ?? why can't i use map here
 console.log(sum);
 
+
+// Create a program that allows users to add items to a shopping cart (array) and then displays the list of items in the cart.
 
 // let cart = ["Rice", "Apple", "Berries"];
 // cart.push("Hamburger")
@@ -84,7 +90,7 @@ function addItem(item) {
 
 function displayCart() {
     console.log("List of items in the cart:");
-    shoppingCart.forEach((item) => console.log(item));
+    shoppingCart.forEach((item, index) => console.log(index, item));
   }
 
 addItem("Rice");
@@ -94,6 +100,7 @@ addItem("Berries");
 displayCart();
 
 
+// Explore array methods like slice, splice, and sort to manipulate and organize array elements in different ways.
 const fruits = ["Apple", "Orange", "Berries", "Guava"];
 console.log(fruits.slice(1, -2));
 console.log(fruits.splice(0, 3));
